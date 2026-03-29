@@ -3,11 +3,11 @@
     --roro: rgba(160, 13, 13, 0.623);
     --purple: rgb(255, 0, 183);
     --bleu: rgb(44, 58, 216);
-    --bleu-foncé: rgb(35, 44, 204);
+    --bleu-foncÃ©: rgb(35, 44, 204);
     --belu-petrole: rgb(22, 0, 99);
     --bleu-claire: rgb(25, 69, 157);
     --bleu-footer: rgb(19, 13, 130);
-    --couleur-de-catégorie: rgb(5, 5, 5);
+    --couleur-de-catÃ©gorie: rgb(5, 5, 5);
     --violet: rgb(100, 0, 150);
 }
 
@@ -87,7 +87,7 @@ header img {
 }
 
 /*========================================================================================
-                                        2iéme header
+                                        2iÃ©me header
 ========================================================================================*/
 .name {
     margin-bottom: -50px;
@@ -106,7 +106,7 @@ header img {
     position: sticky;
     top: 40px;
     transform: translateY(-20px);
-    /* Décalage de 20px vers le bas */
+    /* DÃ©calage de 20px vers le bas */
     margin: 0px;
     padding: 0px;
     display: flex;
@@ -198,7 +198,7 @@ tr>th>h2::after {
     content: '';
     position: absolute;
     bottom: 15%;
-    /* Décale l'underline vers le bas */
+    /* DÃ©cale l'underline vers le bas */
     left: 0;
     width: 100%;
     height: 20%;
@@ -238,12 +238,16 @@ tr>th:last-child h2::after {
 }
 
 .categorie>div {
-    padding: 2%;
+    padding:  2% 8% 0% 8%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
+}
+
+.categorie>div:last-child{
+    padding:  2% 8% 8% 8%;
 }
 
 .categorie>div>div>div {
@@ -253,8 +257,9 @@ tr>th:last-child h2::after {
 }
 
 .categorie>div>div>img {
-    height: 100%;
     width: 100%;
+    object-fit: contain;
+    max-height: 380px;
 }
 
 #droite {
@@ -303,10 +308,11 @@ img {
 
 #titre-sous-titre {
     margin: 30px;
-    margin-top: 35px;
-    margin-bottom: 35px;
+    margin-top: 50px;
+    margin-bottom: 0px;
     display: flex;
 }
+
 
 #titre-sous-titre>div {
     display: flex;
@@ -331,7 +337,7 @@ img {
 
 #titre>div {
     position: relative;
-    /* parent positionné */
+    /* parent positionnÃ© */
     display: inline-block;
 }
 
@@ -382,38 +388,38 @@ img {
 }
 
 
-/* catégorie landing page ====================================*/
+/* catÃ©gorie landing page ====================================*/
 
 
 
 body {
-    --couleur-de-catégorie: var(--roro)
+    --couleur-de-catÃ©gorie: var(--roro)
 }
 
-/*titre hors catégorie */
+/*titre hors catÃ©gorie */
 body>#titre>div::after {
-    background-color: var(--couleur-de-catégorie);
+    background-color: var(--couleur-de-catÃ©gorie);
 }
 
 body>.categorie {
-    border-color: var(--couleur-de-catégorie);
-    background: var(--couleur-de-catégorie);
+    border-color: var(--couleur-de-catÃ©gorie);
+    background: var(--couleur-de-catÃ©gorie);
     background: linear-gradient(90deg, rgb(22, 0, 92, 1) 0%,
-            var(--couleur-de-catégorie) 200%);
+            var(--couleur-de-catÃ©gorie) 200%);
 }
 
 
-/*titre dans la catégorie */
+/*titre dans la catÃ©gorie */
 #titre>div::after {
     content: "";
     position: absolute;
     bottom: 15%;
-    /* collé en bas */
+    /* collÃ© en bas */
     left: 0;
     width: 100%;
     height: 10px;
     /* juste une petite bande */
-    background-color: var(--couleur-de-catégorie);
+    background-color: var(--couleur-de-catÃ©gorie);
     z-index: 0;
 }
 
@@ -422,37 +428,37 @@ body>.categorie {
 
 
 
-/*titre hors catégorie */
+/*titre hors catÃ©gorie */
 body>#titre:nth-child(6)>div::after {
-    --couleur-de-catégorie: var(--purple);
+    --couleur-de-catÃ©gorie: var(--purple);
 }
 
 body>.categorie:nth-child(7) {
-    --couleur-de-catégorie: var(--purple)
+    --couleur-de-catÃ©gorie: var(--purple)
 }
 
 
 /*----------------------------------------------------------------------------*/
 
-/*titre hors catégorie */
+/*titre hors catÃ©gorie */
 body>#titre:nth-child(8)>div::after {
-    --couleur-de-catégorie: var(--bleu);
+    --couleur-de-catÃ©gorie: var(--bleu);
 }
 
 body>.categorie:nth-child(9) {
-    --couleur-de-catégorie: var(--bleu);
+    --couleur-de-catÃ©gorie: var(--bleu);
 }
 
 
 /*----------------------------------------------------------------------------*/
 
-/*titre hors catégorie */
+/*titre hors catÃ©gorie */
 body>#titre:nth-child(10)>div::after {
-    --couleur-de-catégorie: var(--bleu);
+    --couleur-de-catÃ©gorie: var(--bleu);
 }
 
 body>.categorie:nth-child(11) {
-    --couleur-de-catégorie: var(--bleu);
+    --couleur-de-catÃ©gorie: var(--bleu);
 }
 
 
@@ -471,9 +477,9 @@ body>.categorie:nth-child(11) {
     width: auto;
     height: 50%;
     overflow-x: auto;
-    /* Permet de défiler horizontalement */
+    /* Permet de dÃ©filer horizontalement */
     white-space: nowrap;
-    /* Empêche le retour à la ligne pour les éléments enfants */
+    /* EmpÃªche le retour Ã  la ligne pour les Ã©lÃ©ments enfants */
 }
 
 .horizontal-scroll-container::-webkit-scrollbar {
@@ -514,13 +520,13 @@ body>.categorie:nth-child(11) {
 
 
 
-/* catégorie landing page ===================================================*/
+/* catÃ©gorie landing page ===================================================*/
 
 
 
 .footer_bg {
     position: relative;
-    background: linear-gradient(-180deg, rgb(19, 1, 81) 0%, var(--bleu-foncé) 200%);
+    background: linear-gradient(-180deg, rgb(19, 1, 81) 0%, var(--bleu-foncÃ©) 200%);
 }
 
 .footer_arrondi {
@@ -661,7 +667,7 @@ body>.categorie:nth-child(11) {
             100% 0%,
             100% 65%,
             0% 100%);
-    /* Crée un carré avec un sommet plus bas */
+    /* CrÃ©e un carrÃ© avec un sommet plus bas */
 }
 
 
@@ -681,7 +687,7 @@ body>.categorie:nth-child(11) {
             100% 0%,
             100% 100%,
             0% 65%);
-    /* Crée un carré avec un sommet plus bas */
+    /* CrÃ©e un carrÃ© avec un sommet plus bas */
 }
 
 .project-section>#custom-square-right {
@@ -719,7 +725,7 @@ body>.categorie:nth-child(11) {
     z-index: -1;
 }
 
-/* décale la premiére image pour combler l'espace de la navbar*/
+/* dÃ©cale la premiÃ©re image pour combler l'espace de la navbar*/
 .project-section:nth-child(3)>.banner>img {
     top: -100px;
 }
